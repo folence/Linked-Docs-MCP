@@ -1,0 +1,268 @@
+---
+title: Aquilo - Factorio Wiki
+source: https://wiki.factorio.com/Aquilo
+scraped_at: 2025-10-21 15:46:52
+tags: [web, documentation]
+---
+
+# Aquilo - Factorio Wiki
+
+**Source:** [https://wiki.factorio.com/Aquilo](https://wiki.factorio.com/Aquilo)
+
+Space Age expansion exclusive feature.
+
+Aquilo is a desolate, freezing ocean planet . Its surface consists solely of a vast ocean of liquid ammonia, with the occasional floating iceberg.
+
+Progression wise, Aquilo is meant to be visited after establishing factories on all the previous planets. Planet discovery Aquilo (research) requires rocket turrets , Advanced asteroid processing (research) , and heating towers from Gleba, Asteroid reprocessing (research) from Vulcanus , and Electromagnetic science pack (research) from Fulgora .
+
+Planet discovery Aquilo (research) is required to travel to the planet.
+
+## Contents
+
+- 1 Achievements
+- 2 Exclusive items
+- 3 Surface 3.1 Properties 3.2 Natural resources
+- 4 Access to basic resources
+- 5 Mechanics 5.1 Ice terrain 5.2 Freezing 5.3 Notes 5.4 Solar energy
+- 6 Space routes
+- 7 Orbit 7.1 Properties
+- 8 Gallery
+- 9 Trivia
+- 10 History
+- 11 See also
+
+## Achievements
+
+|  | Visit Aquilo Travel to planet Aquilo . |
+
+## Exclusive items
+
+Lithium brine , ammoniacal solution , and fluorine can only be obtained on Aquilo.
+
+The following items have recipes with an explicit restriction that they can only be crafted on Aquilo:
+
+- Cryogenic plant
+- Fusion generator
+- Fusion reactor
+- Cryogenic science pack
+- Quantum processor (can also be crafted on space platforms )
+
+The following fluids are extracted from or produced on Aquilo and cannot be barrelled for transport elsewhere, making them exclusive to Aquilo:
+
+- Ammoniacal solution
+- Fluorine
+- Lithium brine
+- Ammonia
+
+Because the above fluids cannot be taken off of Aquilo, any recipe that directly consumes them is de-facto exclusive to Aquilo:
+
+- Fluoroketone (hot)
+- Lithium
+- Fusion power cell
+- Solid fuel from ammonia
+- Ammonia rocket fuel
+
+The following can be crafted elsewhere, but are unlocked on Aquilo:
+
+- Fluoroketone (cold)
+- Lithium plate
+- Foundation
+- Railgun turret
+- Railgun
+- Railgun ammo
+- Captive biter spawner
+- Portable fusion reactor
+- Promethium science pack
+
+## Surface
+
+### Properties
+
+| Property | Value |
+| Pollutant Type | None |
+| Day Night Cycle | 20 Minutes |
+| Magnetic Field | 10 |
+| Solar Power | 01% |
+| Pressure | 300 |
+| Gravity | 15 |
+| Robot energy usage | 500% |
+
+### Natural resources
+
+In terms of directly exploitable natural resources, Aquilo has:
+
+- Ammoniacal solution (via offshore pump on the edge of the ammoniacal seas)
+- Lithium brine (via pumpjack )
+- Fluorine (via pumpjack)
+- Crude oil (via pumpjack)
+
+Limited amounts of lithium , ice , and ice platform can be gathered from lithium ice formations , but are otherwise crafted.
+
+## Access to basic resources
+
+- Water can be obtained via ammoniacal solution separation and ice melting
+- Stone is not available and must be shipped in from other planets
+- Iron ore is not available and must be shipped in from other planets
+- Copper ore is not available and must be shipped in from other planets
+- Coal is not available and must be shipped in from other planets
+- Crude oil can be obtained using pumpjacks as normal
+
+## Mechanics
+
+The starting area on Aquilo is a relatively small patch of snow and ice terrain. Beyond this small platform are the vast ammoniacal seas, which have small dots of icey terrain in them, usually around crude oil , fluorine , or lithium brine resource geysers. Aquilo is notable for having nothing to drill with any kind of miner. All natural resources, spare the lithium ice formations , are gathered either by an offshore pump or pumpjack . Bases on Aquilo will be reliant on regularly shipping in resources from other planets.
+
+### Ice terrain
+
+On Aquilo, most terrain must be constructed, but landfill and foundation are no help. Instead, you must use ice platforms . These platforms are created by first using ammoniacal solution separation to make ice and ammonia , then re-combining those into a platform that can be placed on the ocean like landfill . (This production chain produces a surplus of ammonia, which unlike solid byproducts cannot be dumped or recycled away; it must be either manually emptied from storage from time to time or consumed by some other recipe.)
+
+Snowy terrain can be built on directly, but on any kind of ice terrain or ice platform, most buildings will require an insulating floor of concrete tiles or derivatives before they can be placed. Stone bricks cannot be used to pave ice.
+
+### Freezing
+
+Aquilo is brutally cold. The harsh ambient temperatures drain the energy from any airborne construction robots and logistic robots , making them consume 5 times more power than normal. Most buildings will freeze and stop working unless heated by a heat pipe or heat generator. Heat can be generated by the nuclear reactor or heating tower .
+
+Once a building is adjacent to a heat source above 30°C, it will consume heat energy to maintain its state, reducing the energy (and temperature) in the heat source. Different entities consume different amounts of heat to prevent freezing.
+
+### Notes
+
+- Underground belts and pipes to ground are substantially larger heat drains than their above-ground versions
+- Heat pipes do not lose heat to the environment; they only lose heat to entities that need to be kept warm.
+- All burner entities and heat-producing machines are immune to freezing.
+
+For details on heat throughput, see the heat pipe page.
+
+A building is adjacent to a heat source when it is one tile away from the heat source either orthogonally or diagonally. All of the pipes would be heated in the below example:
+
+|  |  |
+
+| Building | Kilowatts |
+|  | 10 |
+|  | 50 |
+|  | 100 |
+|  | 150 |
+|  | 200 |
+|  | 40 |
+|  | 1 |
+|  | 150 |
+|  | 30 |
+|  | 100 |
+|  | 20 |
+|  | 30 |
+|  | 30 |
+|  | 50 |
+|  | 50 |
+|  | 50 |
+|  | 50 |
+|  | 50 |
+|  | 100 |
+|  | 100 |
+|  | 100 |
+|  | 200 |
+|  | 300 |
+|  | 400 |
+
+The following entities are immune to freezing. Many may be placed directly on ice tiles (with the exceptions you might expect, mostly).
+
+| Tile | Entities | Category |
+|  |  | Offshore pumps |
+|  |  | Chests |
+|  |  | Electric poles |
+|  |  | Basic electric devices |
+|  |  | Tesla turrets |
+|  |  | Bots |
+|  |  | Vehicles |
+|  |  | Trains |
+|  |  | Rail pieces |
+| Any |  | Rail pieces |
+|  |  | Space cargo |
+|  |  | Player notification devices |
+|  |  | Burner entities |
+|  |  | Heat generators and heat pipes |
+|  |  | Fusion power |
+|  |  | Flamethrower turrets |
+|  |  | Walls and gates |
+
+### Solar energy
+
+Aquilo is far from its sun, and so solar panels on its surface only output at 1% of their rate on Nauvis: 0.6 kW peak production. This makes panels practical for little more than powering the first machines to produce the water needed for real power generation.
+
+The minimum machines needed to produce water is either a single chemical plant to melt ice (which can initially be dropped from a space platform), or a single assembling machine 2 to empty barrels of water also dropped from the platform. Assembling machine 2s require less power than chemical plants, and the unbarreling recipe is faster than ice melting . So on the whole, the assembler version will be faster.
+
+Note that it is not necessary to fully power these machines. As long as the available power is greater than their drain, they will be able to function, albeit at reduced speed. Efficiency modules can speed this process up. With 3 efficiency modules, an assembling machine 2 only needs 35 kW to run at full speed (59 solar panels). To reach just 1/8th of max speed requires only 8.75 kW, which only needs 15 (base quality ) solar panels.
+
+Once even a little water is available, heat exchangers heated by either heating towers or nuclear reactors can feed steam turbines for power. This power can be used to process ammoniacal solution separation to generate ice, which can be melted into water for continuous power generation.
+
+## Space routes
+
+Aquilo is connected to 2 other planets, Gleba and Fulgora , along with the Solar system edge
+
+| Planet | Distance (km) |
+| Gleba | 30,000 |
+| Fulgora | 30,000 |
+| Solar system edge | 100,000 |
+
+Asteroid rate graphs:
+
+| Space route from Gleba to Aquilo | Space route from Fulgora to Aquilo | Space route from Aquilo to Solar system edge |
+
+Graph legend:
+
+| Asteroid type | Chunk | Medium | Big |
+| Metallic | ● Blue | ● Red | ● Cyan |
+| Carbonic | ● Orange | ● Yellow | ● Brown |
+| Oxide | ● Green | ● Magenta | ● Purple |
+
+## Orbit
+
+### Properties
+
+| Property | Value |
+| Solar Power | 60% |
+
+| Asteroid Type | Spawn Ratio |
+| Metallic asteroid chunk | 1 |
+| Carbonic asteroid chunk | 2 |
+| Oxide asteroid chunk | 20 |
+| Promethium asteroid chunk | 0 |
+
+| Asteroid Size | Spawn % |
+| Chunk | .10 |
+| Medium | 0 |
+| Big | 0.25 |
+| Huge | 0 |
+
+Note:
+
+- Chunks spawn at Nauvis at 1.25%
+- Huge Asteroids only spawn past Aquilo
+
+## Gallery
+
+- Example landscape of Aquilo.
+- Aquilo seen on the expansion's title screen.
+
+## Trivia
+
+- In mythology, Aquilo is the Roman god of the north wind, storms, and winter.
+- During development, Aquilo was planned to be home to floating, jellyfish-like enemies, concept art for which were shown in Friday Facts #367 . However, they were not implemented due to them making progression "much slower". [1]
+- Aquilo's design with ice and liquid ammonia oceans is based on real-world ice planets .
+
+## History
+
+- 2.0.7 : Introduced in Space Age expansion.
+
+## See also
+
+- Fulgora
+- Gleba
+- Nauvis
+- Vulcanus
+- Space platform
+
+| Space |
+| Planetside buildings | Rocket silo Cargo landing pad Cargo pod |
+| Space platform | Space platform foundation Cargo bay Asteroid collector Crusher Thruster Space platform hub |
+| Rocket cargo | Satellite Space platform starter pack |
+| Asteroids | Metallic asteroid chunk Carbonic asteroid chunk Oxide asteroid chunk Promethium asteroid chunk |
+| Locations | Nauvis Vulcanus Gleba Fulgora Aquilo Solar system edge Shattered planet |
+| Navigation | Logistics Production Intermediate products Combat Technology Environment |

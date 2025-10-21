@@ -1,0 +1,36 @@
+# Linked Documentation MCP Server Dependencies
+# Python 3.10+
+
+# Core Framework
+fastapi>=0.115.2,<1.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.6.1,<3.0.0
+pydantic-settings>=2.3.0
+
+# Vector Storage & Embeddings
+faiss-cpu>=1.12.0
+sentence-transformers>=3.0.0
+# chromadb removed - not used in current implementation
+
+# Keyword Search
+rank-bm25>=0.2.2
+
+# Document Parsing
+pdfplumber>=0.11.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+markdown>=3.6
+
+# Data Storage
+tinydb>=4.8.0
+
+# Utilities
+python-dotenv>=1.0.0
+python-multipart>=0.0.18
+aiofiles>=24.0.0
+
+# Development
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+httpx>=0.27.0
+
