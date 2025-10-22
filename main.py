@@ -14,11 +14,16 @@ import uvicorn
 
 from schemas.config import settings
 from schemas.document import AccessLevel
-from connectors import PDFConnector, MarkdownConnector
-from indexing import TextChunker, Embedder, VectorStore, KeywordSearcher
+from connectors.pdf import PDFConnector
+from connectors.markdown import MarkdownConnector
+from indexing.chunker import TextChunker
+from indexing.embedder import Embedder
+from indexing.vector_store import VectorStore
+from indexing.keyword_search import KeywordSearcher
 from indexing.hybrid_search import HybridSearchEngine
-from core import AccessController, AuditLogger
-from routes import router
+from core.access_control import AccessController
+from core.audit import AuditLogger
+from routes.mcp_routes import router
 from routes import mcp_routes
 
 

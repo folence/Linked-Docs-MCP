@@ -1,11 +1,16 @@
-# Linked Documentation MCP Server
+# Linked Documentation System
 
-> **A production-ready RAG system exposed via Model Context Protocol**  
-> Enables AI assistants to intelligently search and reference documentation using hybrid semantic + keyword search.
+> **A production-ready RAG system with dual interfaces: REST API + MCP Protocol**  
+> Enables web applications and AI assistants to intelligently search and reference documentation using hybrid semantic + keyword search.
 
 ## 🎯 What Is This?
 
-This is a **complete RAG (Retrieval Augmented Generation) system** that integrates seamlessly with AI assistants like Cursor through the **Model Context Protocol (MCP)**. Instead of AI assistants hallucinating answers, they can search your actual documentation and provide accurate, cited responses.
+This is a **complete RAG (Retrieval Augmented Generation) system** that provides two ways to access powerful documentation search:
+
+1. **REST API Server** (`main.py`) - FastAPI-based HTTP server for web applications and integrations
+2. **MCP Server** (`mcp_server.py`) - Model Context Protocol server for AI assistants (Cursor, Claude Desktop)
+
+Both servers share the same hybrid search engine, enabling accurate documentation retrieval whether you're building a web app or empowering an AI assistant.
 
 ### Key Features
 
@@ -244,7 +249,9 @@ open http://localhost:8000/docs
 ### Programmatic Usage
 
 ```python
-from indexing import HybridSearchEngine, Embedder, VectorStore
+from indexing.embedder import Embedder
+from indexing.vector_store import VectorStore
+from indexing.hybrid_search import HybridSearchEngine
 
 # Initialize
 embedder = Embedder(model_name="all-MiniLM-L6-v2")

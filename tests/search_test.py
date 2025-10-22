@@ -13,7 +13,9 @@ Usage:
 import asyncio
 import argparse
 from collections import defaultdict
-from indexing import Embedder, VectorStore, KeywordSearcher
+from indexing.embedder import Embedder
+from indexing.vector_store import VectorStore
+from indexing.keyword_search import KeywordSearcher
 from indexing.hybrid_search import HybridSearchEngine
 from schemas.config import settings
 

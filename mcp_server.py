@@ -21,10 +21,15 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from schemas.config import settings
 from schemas.document import AccessLevel
-from connectors import PDFConnector, MarkdownConnector
-from indexing import TextChunker, Embedder, VectorStore, KeywordSearcher
+from connectors.pdf import PDFConnector
+from connectors.markdown import MarkdownConnector
+from indexing.chunker import TextChunker
+from indexing.embedder import Embedder
+from indexing.vector_store import VectorStore
+from indexing.keyword_search import KeywordSearcher
 from indexing.hybrid_search import HybridSearchEngine
-from core import AccessController, AuditLogger
+from core.access_control import AccessController
+from core.audit import AuditLogger
 
 # Debug mode - set to False to reduce logging noise in LM Studio
 DEBUG_MODE = False
