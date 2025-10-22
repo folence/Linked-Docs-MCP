@@ -1,30 +1,39 @@
 """Search-related data models."""
 
 from typing import Optional
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
 from .document import AccessLevel
 
 
 class SearchQuery(BaseModel):
-    """A search query request."""
+    """A search query request. Only 'query' is required - all other fields are optional."""
+    
+    model_config = ConfigDict(
+        json_schema_extra={
+            "example": {
+                "query": "getting started",
+                "top_k": 10
+            }
+        }
+    )
     
     query: str = Field(..., description="Search query text", min_length=1)
     top_k: int = Field(default=10, description="Number of results to return", ge=1, le=100)
     access_level: Optional[AccessLevel] = Field(
         default=None, 
-        description="Maximum access level for filtering results"
+        description="(Optional) Maximum access level for filtering results"
     )
     source_types: Optional[list[str]] = Field(
         default=None,
-        description="Filter by specific source types (pdf, markdown, etc.)"
+        description="(Optional) Filter by specific source types like 'pdf' or 'markdown'. Omit this field to search all types."
     )
     tags: Optional[list[str]] = Field(
         default=None,
-        description="Filter by document tags"
+        description="(Optional) Filter by document tags. Omit this field to search all documents."
     )
     user_id: Optional[str] = Field(
         default=None,
-        description="User ID for audit logging"
+        description="(Optional) User ID for audit logging"
     )
 
 

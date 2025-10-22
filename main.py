@@ -102,6 +102,10 @@ async def lifespan(app: FastAPI):
                     "last_indexed": None
                 }
         print(f"    Reconstructed metadata for {len(document_store)} documents")
+        
+        # Populate keyword searcher with existing chunks
+        print(f"  - Rebuilding keyword index from existing chunks...")
+        keyword_searcher.index_chunks(vector_store.chunks)
     
     await index_documents(
         embedder=embedder,

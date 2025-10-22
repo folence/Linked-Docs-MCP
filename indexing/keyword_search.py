@@ -22,17 +22,20 @@ class KeywordSearcher:
         """
         Index chunks for keyword search.
         
+        This method REPLACES the existing index with the provided chunks.
+        To rebuild the index with all chunks, pass vector_store.chunks.
+        
         Args:
             chunks: List of DocumentChunk objects to index
         """
         if not chunks:
             return
         
-        self.chunks.extend(chunks)
+        # Replace existing chunks (not extend) to avoid duplicates
+        self.chunks = list(chunks)
         
         # Tokenize all chunk texts
-        new_tokenized = [self._tokenize(chunk.text) for chunk in chunks]
-        self.tokenized_corpus.extend(new_tokenized)
+        self.tokenized_corpus = [self._tokenize(chunk.text) for chunk in chunks]
         
         # Rebuild BM25 index with all chunks
         self.bm25 = BM25Okapi(self.tokenized_corpus)

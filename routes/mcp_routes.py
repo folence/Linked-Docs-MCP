@@ -127,15 +127,15 @@ async def search_docs(query: SearchQuery):
     if query.access_level and access_controller:
         results = access_controller.filter_chunks(results, max_access_level=query.access_level)
     
-    # Filter by source types if specified
-    if query.source_types:
+    # Filter by source types if specified (ignore empty lists)
+    if query.source_types and len(query.source_types) > 0:
         results = [
             (chunk, score) for chunk, score in results
             if chunk.metadata.get("source_type") in query.source_types
         ]
     
-    # Filter by tags if specified
-    if query.tags:
+    # Filter by tags if specified (ignore empty lists)
+    if query.tags and len(query.tags) > 0:
         results = [
             (chunk, score) for chunk, score in results
             if any(tag in chunk.metadata.get("tags", []) for tag in query.tags)
